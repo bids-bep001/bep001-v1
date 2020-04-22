@@ -158,6 +158,21 @@ A change to the specification is REQUIRED to expand or to modify the following t
 | Inplane T1                                 | inplaneT1 | Conventional | T1-weighted anatomical image matched to functional acquisition                                                           |
 | Inplane T2                                 | inplaneT2 | Conventional | T2-weighted anatomical image matched to functional acquisition                                                           |
 
+Example use for conventional **T1 weighted images**:
+
+```Text
+sub-01_run-1_T1w.nii.gz
+sub-01_run-1_T1w.json
+sub-01_run-2_T1w.nii.gz
+sub-01_run-2_T1w.json
+```
+
+The `run` entity in the example above denotes the index of the acquisition
+repeated with the identical scan parameters (e.g. to achieve a higher SNR by averaging the scans together).
+Note that changing parameters between multiple acquisitions of the same sequence
+creates a different use case: **grouped scan collections**. For more information see
+the [grouping suffixes](#grouping-suffixes) subsection.
+
 #### The `run` entity
 
 If several scans of the same modality are acquired they MUST be indexed with a
