@@ -136,6 +136,15 @@ modalities include:
 | Inplane T1         | inplaneT1        | T1-weighted anatomical image matched to functional acquisition                                                                                    |
 | Inplane T2         | inplaneT2        | T2-weighted anatomical image matched to functional acquisition                                                                                    |
 | Angiography        | angio            |                                                                                                                                                   |
+##### Conventional MRI suffixes
+
+**Function:**
+
+Denotes the type of the predominant contrast conveyed by an individual file of
+a conventional anatomical image.
+One of the `_<suffix>` entries listed in the table below
+is REQUIRED (with additional entities where applicable) to provide a self
+explanatory file name.
 
 #### The `run` entity
 
