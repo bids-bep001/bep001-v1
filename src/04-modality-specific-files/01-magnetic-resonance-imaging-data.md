@@ -173,6 +173,20 @@ Note that changing parameters between multiple acquisitions of the same sequence
 creates a different use case: **grouped scan collections**. For more information see
 the [grouping suffixes](#grouping-suffixes) subsection.
 
+**Important:**
+
+If an anatomical image is defaced for anonymization, one MAY provide
+the binary mask that was used to remove facial features. In the specific case of
+naming this binary mask, the `_<suffix>` entity is replaced by `_<defacemask>` entry.
+Therefore, to contain the original `_<suffix>` entry, the OPTIONAL `mod-<suffix>`
+entity is used. For example, deface mask image belonging to a **T1 weighted image**
+is named as follows:
+
+```
+sub-01_mod-T1w_defacemask.nii.gz
+sub-01_mod-T1w_defacemask.json
+```
+
 #### The `run` entity
 
 If several scans of the same modality are acquired they MUST be indexed with a
