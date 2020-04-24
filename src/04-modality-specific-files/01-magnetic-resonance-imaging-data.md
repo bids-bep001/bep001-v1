@@ -143,8 +143,8 @@ modalities include:
 Denotes the type of the predominant contrast conveyed by an individual file of
 a conventional anatomical image.
 One of the `_<suffix>` entries listed in the table below
-is REQUIRED (with additional entities where applicable) to provide a self
-explanatory file name.
+is REQUIRED (with additional entities where applicable) to provide a self-explanatory file 
+name.
 
 A change to the specification is REQUIRED to expand or to modify the following table.
 
@@ -168,7 +168,7 @@ sub-01_run-2_T1w.json
 ```
 
 The `run` entity in the example above denotes the index of the acquisition
-repeated with the identical scan parameters (e.g. to achieve a higher SNR by averaging the scans together).
+repeated with the identical scan parameters (e.g., to achieve a higher SNR by averaging the scans together).
 Note that changing parameters between multiple acquisitions of the same sequence
 creates a different use case: **grouped scan collections**. For more information see
 the [grouping suffixes](#grouping-suffixes) subsection.
