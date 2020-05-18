@@ -349,6 +349,13 @@ can also be used to make that distinction. At what level of detail to make the
 distinction (e.g. just between RARE and FLASH, or between RARE, FLASH, and
 FLASHsubsampled) remains at the discretion of the researcher.
 
+#### The `part` entity 
+Some (structural) MR images include both `mag` (magnitude) and `phase` information. 
+In that case, the filename MUST make use of this key/value pair to distinguish
+between them. Phase images MUST be in radians and SHOULD have a range of (0, 2 pi]
+(including 0, excluding 2 pi). The part-<mag/phase> key/value pair corresponds to
+the DICOM tag (0008,9208).
+
 #### The `echo` entity 
 
 If the value of `EchoTime` metadata field varies at least once across a collection 
