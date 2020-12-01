@@ -475,3 +475,14 @@ BIDS-apps. For example:
          └── sub-01_TB1map.json                ◀────────────┘
 
 ```
+
+[ADD] This description (TB1) 
+
+``` diff
++ \* These file collections call for the use of special notations that cannot
++ be resolved by entities that can generalize to other applications. Instead of
++ introducing an entity that is exclusive to a single application, method developers
++ who commonly use these file collections for the `MPM` application reached the consensus
++ on the use of `acq` entity to distinguish individual files. Please visit the qMRI
++ appendix for further details.
+```
